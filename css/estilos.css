@@ -1,0 +1,68 @@
+/*Nunito Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+/*Dongle*/
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Sigmar&display=swap');
+/*ABeeZee*/
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+/*Pacifico*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("menu.css");
+@import url("ven_emergente.css");
+@import url("../Inicio_de_Sesion/formulario.css");
+@import url("tarjetas.css");
+@import url("../paginas_sec/pacman/estilos_secu.css");
+@import url("piedepagina.css");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size:cover;
+    background-repeat: repeat;
+    width: 100%;
+}
+
+/*Encabezado*/
+header{
+    background-color: blue;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.contenedor_header {
+    display: flex;
+    align-items: center;
+    width: 97%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+}
+.contenedor_header img{
+    height: 50px;
+}
+.contenedor_header h1{
+    color: #fff;
+    font-size: 9vw;
+}
+.contenedor_header label i{
+    font-size:47px;
+    color: white;
+}
+#menu-bar {
+    display: none;
+}
+
+@media (min-width: 768px){
+    .contenedor_header h1{
+        font-size: 6vw;
+        
+    }
+}
+

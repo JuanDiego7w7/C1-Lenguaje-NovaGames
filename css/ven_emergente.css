@@ -1,0 +1,83 @@
+.fondo_ventana {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(169, 168, 168, 0.56);
+    backdrop-filter: blur(8px);
+    height: 100%;
+    margin-top: -80px;
+}
+
+.ventana {
+    background: url(../img/fondo_ven.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10% auto;
+    border: 1px solid #ffffff;
+    width: 90%;
+    color: white;
+    border-radius: 15px;
+    position: relative;
+}
+
+.v_img1{
+    text-align: center;
+}
+
+.v_img1 img{
+    display: inline-block;
+    width: calc(6vh + 8vw);
+    margin: 0 auto;
+}
+
+.v_titulo{
+    padding: 1vh;
+    text-align: center;
+}
+.v_titulo h2{
+    font-size: calc(1.2vh + 4.5vw);
+}
+
+.v_texto1{
+    display: flex;
+    padding: 2vh;
+}
+
+.v_texto1 p{
+    font-size: calc(2vh + 1vw);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.img_ventana{
+    text-align: center;
+}
+.img_ventana img{
+    display: inline-block;
+    margin: 0 auto;
+    height: calc(10vh + 10vw);
+}
+
+.presionar{
+    text-align: center;
+    margin-top: 2vh;
+}
+.presionar p{
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 5px;
+    display: inline;
+    border: 2px solid yellow;
+    font-size: 2vw;
+    animation: agrandar 1.5s infinite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@keyframes agrandar {
+    50%{
+        font-size: 1.8vh;
+    }
+    100%{
+        font-size: 2vh;
+    }
+}

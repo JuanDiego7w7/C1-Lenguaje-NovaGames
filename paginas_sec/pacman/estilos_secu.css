@@ -1,0 +1,53 @@
+.principal_pacman{
+    margin-top: 80px;
+}
+.cabeza_pacman{
+    display: flex;
+    justify-content: center;
+}
+.cabeza_pacman img{
+    width: 15%;
+    margin-right: 10px;
+
+}
+.cabeza_pacman h2{
+    color: white;
+    font-size: 11vw;
+}
+.fondo_contenido{
+    width: 85%;
+    background-color: rgba(2, 18, 32, 0.50);
+    padding: 20px 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    margin: auto;
+    margin-bottom: 20px;
+}
+.fondo_contenido h2{
+    color: white;
+    font-size: 4vh;
+}
+.fondo_contenido p{
+    color: white;
+    font-size: 3vh;
+}
+.start_juego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start_juego img{
+    width: calc(15vw + 15vh)
+}
+@media (min-width: 768px){
+    .cabeza_pacman h2{
+        font-size: 7vw;
+    }
+    .cabeza_pacman img{
+        width: 9%;
+        margin-right: 10px;   
+    }
+    .start_juego img{
+        width: calc(10vw + 10vh)
+    }
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_contenedor{
+    width: 450px;
+    max-width: 100%;
+    background-color: rgb(2, 18, 32);
+    padding: 40px 45px 40px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
+}
+
+.form_contenedor h1{
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: white;
+    position: relative;
+}
+
+.input_field{
+    display: flex;
+    background-color: #3f4550;
+    margin: 20px 0;
+    border-radius: 5px;
+    align-items: center;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 20px 15px;
+    color: white;
+    font-size: 15px;
+}
+
+input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.input_field i{
+    margin-left: 15px;
+    color: rgb(65, 153, 163);
+}
+
+form p{
+    color: white;
+    text-align: left;
+    font-size: 16px;
+}
+
+form p a{
+    color: rgb(65, 153, 163);
+    margin-left: 5px;
+}
+
+.boton_field{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0;
+}
+
+.boton_field button{
+    flex-basis: 75%;
+    font-size: 20px;
+    background-color: rgb(65, 153, 163);
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.input_grupo{
+    height: 250px;
+}
+.campo-requerido{
+    border: solid red 2px;
+    box-shadow: 2px red ;
+}
+.error{
+    color: rgb(237, 81, 81);
+}

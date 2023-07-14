@@ -1,0 +1,50 @@
+.principal{
+    margin-top: 80px;
+    text-align: center;
+}
+.principal h2{
+    color: white;
+    font-size: 5vh;
+}
+hr{
+    margin-bottom: 5vh;
+}
+.tarjeta p{
+    color: black;
+}
+.tarjeta{
+    width: 85%;
+    background: linear-gradient(rgb(15, 15, 15),rgb(229, 237, 238));
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+.tarjeta img{
+    width: 100%;
+    border-radius: 25px;
+}
+.tarjeta a{
+    text-decoration: none;
+}
+.tarjeta a p b{
+    font-size: 3.5vh;
+}
+@media (min-width: 768px){
+    .tarjeta{
+        width: 35%;
+        display: inline-block;
+    }
+    .principal [pacman="pacman"]{
+        margin-right: 50px;
+    }
+    .principal [galaga="galaga"]{
+        margin-right: 50px;
+    }
+    
+}
+
+
