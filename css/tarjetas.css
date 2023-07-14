@@ -47,4 +47,10 @@ hr{
     
 }
 
+@media (min-width: 1920px){
+    .tarjeta{
+        width: 32%;
+    }
+}
+
 

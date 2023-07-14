@@ -22,15 +22,18 @@
     border-bottom: solid 2px gray;
 }
 .buscador_menu{
+    display: flex;
     justify-content: center;
     border-bottom: solid 2px gray;
     padding-bottom: 2vh;
 }
-.menu input{
+.buscador_menu input{
     border-radius: 2vh;
 }
-.menu i{
+.buscador_menu i{
     font-size: 3vh;    
+    margin-right: 1vh;
+    margin-left: 1vh;
 }
 #menu-bar:checked ~ .menu{
     transform: translateX(0%);
@@ -51,4 +54,69 @@
 }
 .iniciar_sesion a i{
     font-size: 5vh;
+}
+
+@media (min-width: 1920px){
+    .menu{
+        display: flex;
+        background: none;
+        width: auto;
+        height: auto;
+        position: static;
+        transform: translateX(0%);
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
+    .menu > a{
+        border: none;
+        padding-bottom: 0;
+        margin-top: 0vh;
+        margin-right: 15px;
+        padding: 5px;
+        transition: 1s all;
+    }
+    .menu > a:hover{
+        background: linear-gradient(90rad,rgb(222, 233, 76),rgb(255, 206, 71));
+        border-radius: 30px;
+    }
+    header label{
+        display: none;
+    }
+    .iniciar_sesion{
+        margin-top: 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        border-radius: 30px;
+    }
+    .iniciar_sesion a{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3vh;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-top: 0;
+        padding: 5px 5px;
+    }
+    .iniciar_sesion a i{
+        font-size: 4.5vh;
+        align-items: center;
+    }
+    main h2{
+        padding: 10px;
+    }
+    .buscador_menu{
+        justify-content: center;
+        border-bottom: none;
+        margin-right: 300px;
+        margin-left: 250px;
+    }
+    .iniciar_sesion a i{
+        top: 5px;
+        font-size: 3.5vh;
+    }
+    nav.menu a{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 }
